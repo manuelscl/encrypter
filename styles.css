@@ -1,5 +1,6 @@
 :root {
     --color-darkblue: #0A3871;
+    --color-darkblue-hover: #052051;
     --color-lightblue: #F3F5FC;
     --gray-descriptions: #495057;
     --darkgray: #343A40;
@@ -67,11 +68,21 @@ body {
     cursor: pointer;
     transition: 0.3s ease;
 }
+.btns:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.08);
+}
 .btn--blue {
     background: var(--color-darkblue);
 }
+.btn--blue:hover {
+    background: var(--color-darkblue-hover);
+}
 .btn--no-bk {
     color: var(--color-darkblue);
+}
+.btn--no-bk:hover {
+    background: #cad5fb;
 }
 .encrypter-content-right {
     margin-top: 50px;
@@ -99,6 +110,9 @@ body {
 .btn-copy {
     display: none;
     color: var(--color-darkblue);
+}
+.btn-copy:hover {
+    background: #cad5fb;
 }
 @media (min-width: 600px) {
     .navbar-menu {
@@ -148,5 +162,8 @@ body {
     }
     .illustration-ft {
         display: block;
+    }
+    .btn-copy {
+        margin-top: 20px;
     }
 }
