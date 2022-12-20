@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador/desencriptador de texto</title>
+    <title>Encriptador|desencriptador de texto</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <h1>
+                <img src="./images/alura-logo.png" alt="Logo Alura">
+            </h1>
+        </nav>
+    </header>
+    <main>
+        <section class="encriptor-box">
+            <div class="encriptor-content-left">
+                <textarea name="text-ed" id="text-ed" cols="30" rows="10"></textarea>
+
+                <div class="content-bottom">
+                    <p>
+                        <img src="./images/info-icon.png" alt="">
+                        Solo letra minúsculas y sin tíldes
+                    </p>
+                    <div class="btns-box">
+                        <button class="btns btn--blue" id="btn-encrypt">Encriptar</button>
+                        <button class="btns btn--no-bk" id="btn-decrypt">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="encriptor-content-right">
+                <div class="message-container">
+                    <h2 class="h2-title">Ningún mensaje fue encontrado</h2>
+                    <p class="insert-text-info">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
