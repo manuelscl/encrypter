@@ -34,11 +34,11 @@
         .logo-img {
             cursor: pointer;
         }
-        .encriptor-box {
+        .encrypter-box {
             padding: 15px;
             margin-top: 30px;
         }
-        .encriptor-content-left {
+        .encrypter-content-left {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -97,6 +97,9 @@
             padding: 30px;
             box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         }
+        .illustration-ft {
+            display: none;
+        }
         .h2-title {
             color: var(--darkgray);
             margin-bottom: 20px;
@@ -113,12 +116,50 @@
             .navbar-menu {
                 padding: 25px;
             }
-            .encriptor-box {
+            .encrypter-box {
                 padding: 25px;
             }
             .btns-box {
                 flex-direction: row;
                 justify-content: space-between;
+            }
+        }
+        @media (min-width: 768px) {
+            .navbar-menu {
+                padding: 25px 40px;
+            }
+            .encrypter-box {
+                padding: 40px;
+            }
+        }
+        @media (min-width: 980px) {
+            .navbar-menu {
+                max-width: 960px;
+                margin: 0 auto;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .encrypter-box {
+                max-width: 960px;
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                margin: 0 auto;
+                padding: 50px 0;
+            }
+            .content-bottom {
+                padding-bottom: 30px;
+            }
+            .encrypter-content-right {
+                margin: 0;
+            }
+            .message-container {
+                width: 320px;
+                height: 100%;
+                justify-content: center;
+            }
+            .illustration-ft {
+                display: block;
             }
         }
     </style>
@@ -132,8 +173,8 @@
         </nav>
     </header>
     <main>
-        <section class="encriptor-box">
-            <div class="encriptor-content-left">
+        <section class="encrypter-box">
+            <div class="encrypter-content-left">
                 <textarea name="textArea-ed" class="textArea-ed"id="textArea-ed" cols="30" rows="10" placeholder="Inserta el texto aquí"></textarea>
 
                 <div class="content-bottom">
@@ -150,6 +191,7 @@
             <div class="encrypter-content-right">
                 <div class="message-container">
                     <p class="message-ed"></p>
+                    <img class="illustration-ft" src="./images/Illustration-flat.png" alt="">
                     <h2 class="h2-title">Ningún mensaje fue encontrado</h2>
                     <p class="insert-text-info">Ingresa el texto que deseas encriptar o desencriptar</p>
                     <button class="btns btn-copy" id="btn-copy">Copiar</button>
